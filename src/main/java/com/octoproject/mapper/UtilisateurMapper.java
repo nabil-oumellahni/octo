@@ -1,8 +1,6 @@
 package com.octoproject.mapper;
 
-import com.octoproject.domain.Compte;
 import com.octoproject.domain.Utilisateur;
-import com.octoproject.dto.CompteDto;
 import com.octoproject.dto.UtilisateurDto;
 
 public class UtilisateurMapper {

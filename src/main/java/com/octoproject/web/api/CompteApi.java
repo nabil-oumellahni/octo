@@ -43,8 +43,7 @@ public interface CompteApi {
                     description = "Le compte n'est pas valide."
             )
     })
-    CompteDto save(@RequestBody  CompteDto dto);
-
+    CompteDto save(@RequestBody CompteDto dto);
 
 
     @GetMapping(
@@ -54,7 +53,7 @@ public interface CompteApi {
     @Operation(
             summary = "Rechercher un compte.",
             description = "Cette methode permet de rechercher un client par leur numero.",
-            tags = { "compte" }
+            tags = {"compte"}
     )
     @ApiResponses(value = {
             @ApiResponse(
@@ -78,7 +77,7 @@ public interface CompteApi {
     @Operation(
             summary = "Rechercher un compte.",
             description = "Cette methode permet de rechercher un client par leur rib.",
-            tags = { "compte" }
+            tags = {"compte"}
     )
     @ApiResponses(value = {
             @ApiResponse(
@@ -101,7 +100,7 @@ public interface CompteApi {
     @Operation(
             summary = "Renvoi la liste des comptes",
             description = "Cette methode permet de chercher et renvoyer la liste des comptes qui existent",
-            tags = { "compte" }
+            tags = {"compte"}
     )
     @ApiResponses(value = {
             @ApiResponse(

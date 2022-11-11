@@ -9,9 +9,9 @@ import java.math.BigDecimal;
 @Setter
 public class TransferDto {
 
-  private String nrCompteEmetteur;
-  private String nrCompteBeneficiaire;
-  private String motif;
-  private BigDecimal montant;
+    private String nrCompteEmetteur;
+    private String nrCompteBeneficiaire;
+    private String motif;
+    private BigDecimal montant;
 
 }

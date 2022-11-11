@@ -1,18 +1,17 @@
 package com.octoproject.service;
 
 import com.octoproject.domain.Compte;
-import com.octoproject.dto.CompteDto;
 
 import java.util.List;
 
 public interface ICompteService {
 
-    CompteDto save(CompteDto dto);
+    Compte save(Compte compte);
 
-    CompteDto getByNrCompte(String nrCompte);
+    Compte getByNrCompte(String nrCompte);
 
-    CompteDto getByRib(String rib);
+    Compte getByRib(String rib);
 
-    List<CompteDto> getAll();
+    List<Compte> getAll();
 
 }

@@ -13,8 +13,8 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @Table(name = "AUDIT")
-@Inheritance(strategy=InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name="TYPE_AUDIT")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "TYPE_AUDIT")
 public abstract class Audit {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

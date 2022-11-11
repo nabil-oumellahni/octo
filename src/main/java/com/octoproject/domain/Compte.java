@@ -15,19 +15,19 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "COMPTE")
 public class Compte {
-  @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
-  private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-  @Column(length = 16, unique = true)
-  private String nrCompte;
+    @Column(length = 16, unique = true)
+    private String nrCompte;
 
-  private String rib;
+    private String rib;
 
-  @Column(precision = 16, scale = 2)
-  private BigDecimal solde;
+    @Column(precision = 16, scale = 2)
+    private BigDecimal solde;
 
-//  @ManyToOne()
-//  @JoinColumn(name = "idUtilisateur")
-//  private Utilisateur utilisateur;
+    @ManyToOne()
+    @JoinColumn(name = "idUtilisateur")
+    private Utilisateur utilisateur;
 }

@@ -4,13 +4,13 @@ import java.io.Serial;
 
 public class SoldeDisponibleInsuffisantException extends Exception {
 
-  @Serial
-  private static final long serialVersionUID = 1L;
+    @Serial
+    private static final long serialVersionUID = 1L;
 
-  public SoldeDisponibleInsuffisantException() {
-  }
+    public SoldeDisponibleInsuffisantException() {
+    }
 
-  public SoldeDisponibleInsuffisantException(String message) {
-    super(message);
-  }
+    public SoldeDisponibleInsuffisantException(String message) {
+        super(message);
+    }
 }
