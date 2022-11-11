@@ -16,7 +16,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 @SpringBootApplication
-//@EnableJpaAuditing
+@EnableJpaAuditing
 public class OctoProjectApplication implements CommandLineRunner {
 
     @Autowired
